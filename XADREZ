@@ -1,0 +1,45 @@
+#include <stdio.h>
+
+// Constantes para a quantidade de movimentos de cada peça
+#define BISPO_MOV 5
+#define TORRE_MOV 5
+#define RAINHA_MOV 8
+
+int main() {
+    // ===============================
+    // Movimento do Bispo (Diagonal)
+    // ===============================
+    printf("Movimento do Bispo (Diagonal superior direita):\n");
+    
+
+    for (int i = 0; i < BISPO_MOV; i++) {
+        printf("Cima\n");
+        printf("Direita\n");
+    }
+    printf("\n");
+
+    // ===============================
+    // Movimento da Torre (Horizontal)
+    // ===============================
+    printf("Movimento da Torre (Para a direita):\n");
+
+    int torreContador = 0;
+    while (torreContador < TORRE_MOV) {
+        printf("Direita\n");
+        torreContador++;
+    }
+    printf("\n");
+
+    // ===============================
+    // Movimento da Rainha (Para a esquerda)
+    // ===============================
+    printf("Movimento da Rainha (Para a esquerda):\n");
+
+    int rainhaContador = 0;
+    do {
+        printf("Esquerda\n");
+        rainhaContador++;
+    } while (rainhaContador < RAINHA_MOV);
+
+    return 0;
+}
